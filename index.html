@@ -19,37 +19,37 @@
             --secondary-white: #f8f8f8;
             --accent: #3b82f6;
         }
-        
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--primary-white);
             color: var(--primary-black);
             line-height: 1.6;
         }
-        
+
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Playfair Display', serif;
             font-weight: 700;
         }
-        
+
         .header-blur {
             backdrop-filter: blur(10px);
             background-color: rgba(255, 255, 255, 0.85);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         }
-        
+
         .card-blur {
             backdrop-filter: blur(8px);
             background-color: rgba(255, 255, 255, 0.8);
             border: 1px solid rgba(255, 255, 255, 0.5);
         }
-        
+
         .section-heading {
             position: relative;
             padding-bottom: 1rem;
             margin-bottom: 2rem;
         }
-        
+
         .section-heading::after {
             content: '';
             position: absolute;
@@ -59,14 +59,14 @@
             height: 3px;
             background-color: var(--primary-black);
         }
-        
+
         .nav-link {
             position: relative;
             color: var(--primary-black);
             font-weight: 500;
             transition: all 0.3s ease;
         }
-        
+
         .nav-link::after {
             content: '';
             position: absolute;
@@ -77,18 +77,18 @@
             background-color: var(--primary-black);
             transition: width 0.3s ease;
         }
-        
+
         .nav-link:hover::after {
             width: 100%;
         }
-        
+
         .timeline-item {
             position: relative;
             padding-left: 2rem;
             margin-bottom: 3rem;
             border-left: 2px solid var(--primary-black);
         }
-        
+
         .timeline-dot {
             position: absolute;
             left: -0.5rem;
@@ -98,7 +98,7 @@
             border-radius: 50%;
             background-color: var(--primary-black);
         }
-        
+
         .year-badge {
             display: inline-block;
             padding: 0.25rem 1rem;
@@ -108,22 +108,22 @@
             font-weight: 600;
             margin-bottom: 1rem;
         }
-        
+
         .stat-card {
             transition: all 0.3s ease;
             border: 1px solid rgba(0, 0, 0, 0.1);
         }
-        
+
         .stat-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
-        
+
         .footer {
             background-color: var(--primary-black);
             color: var(--primary-white);
         }
-        
+
         .back-to-top {
             position: fixed;
             bottom: 2rem;
@@ -141,32 +141,32 @@
             transition: all 0.3s ease;
             z-index: 1000;
         }
-        
+
         .back-to-top.visible {
             opacity: 1;
             visibility: visible;
         }
-        
+
         .hero-pattern {
             background-image: radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
             background-size: 20px 20px;
         }
-        
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        
+
         .animate-fade-in {
             animation: fadeIn 0.8s ease-out forwards;
         }
-        
+
         .delay-100 { animation-delay: 0.1s; }
         .delay-200 { animation-delay: 0.2s; }
         .delay-300 { animation-delay: 0.3s; }
         .delay-400 { animation-delay: 0.4s; }
         .delay-500 { animation-delay: 0.5s; }
-        
+
         .prose a {
             color: var(--accent);
             text-decoration: none;
@@ -174,42 +174,42 @@
             border-bottom: 1px dotted var(--accent);
             transition: all 0.3s ease;
         }
-        
+
         .prose a:hover {
             border-bottom: 1px solid var(--accent);
         }
-        
+
         .highlight-box {
             background-color: var(--secondary-white);
             border-left: 4px solid var(--primary-black);
             padding: 1.5rem;
             margin: 2rem 0;
         }
-        
+
         blockquote {
             border-left: 4px solid var(--primary-black);
             padding-left: 1.5rem;
             font-style: italic;
             margin: 2rem 0;
         }
-        
+
         .comparison-table {
             width: 100%;
             border-collapse: collapse;
             margin: 2rem 0;
         }
-        
+
         .comparison-table th, .comparison-table td {
             padding: 1rem;
             text-align: left;
             border: 1px solid rgba(0, 0, 0, 0.1);
         }
-        
+
         .comparison-table th {
             background-color: var(--secondary-white);
             font-weight: 600;
         }
-        
+
         .comparison-table tr:nth-child(even) {
             background-color: var(--secondary-white);
         }
@@ -226,7 +226,7 @@
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl md:text-3xl font-bold tracking-tight flex items-center">
                 <span class="bg-black text-white p-1 mr-2">PM</span>
-                <span>The Decisive Factor</span>
+                <span>Summary - Chaos Report</span>
             </a>
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#introduction" class="nav-link">Introduction</a>
@@ -254,7 +254,7 @@
 
     <div class="hero-pattern min-h-screen flex items-center pt-24 pb-16">
         <div class="container mx-auto px-6 py-12 text-center">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">The Decisive Factor</h1>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">Summary - Chaos Report</h1>
             <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-10 animate-fade-in delay-200">Re-evaluating the Project Manager's Role in Software Success through decades of CHAOS Report data and modern research.</p>
             <div class="animate-fade-in delay-400">
                 <a href="#introduction" class="inline-flex items-center px-6 py-3 bg-black text-white font-medium hover:bg-gray-800 transition-colors">
@@ -267,18 +267,18 @@
 
     <main class="container mx-auto px-6 py-16">
         <div class="prose max-w-none">
-            
+
             <section id="introduction" class="py-16">
                 <h2 class="section-heading text-3xl md:text-4xl">Introduction: The "Software Crisis" Revisited</h2>
                 <p>For more than half a century, the information technology sector has been shadowed by the concept of a "software crisis," a term used to describe a persistent state where software projects are chronically over budget, behind schedule, unreliable, and fail to meet user expectations.<sup><a href="https://www.umsl.edu/~sauterv/analysis/Standish/glass.pdf" target="_blank">[1]</a></sup> This is not a historical footnote but an enduring condition of the industry. The financial ramifications of this challenge are staggering. As far back as 1995, The Standish Group estimated that American companies and government agencies would spend $81 billion on canceled software projects in that year alone, with an additional $59 billion in overruns for projects that were eventually completed.<sup><a href="https://www.csus.edu/indiv/v/velianitis/161/chaosreport.pdf" target="_blank">[2]</a></sup> Decades later, the problem has only scaled. A 2020 report from the Consortium for Information & Software Quality (CISQ) found the total cost of unsuccessful development projects among US firms to be an estimated $260 billion.<sup><a href="https://www.3pillarglobal.com/insights/blog/why-software-development-projects-fail/" target="_blank">[3]</a></sup></p>
-                
+
                 <div class="highlight-box">
                     <p class="font-semibold">Despite exponential advances in processing power, the proliferation of sophisticated development tools, and the maturation of software engineering as a discipline, the fundamental challenge of successful project delivery remains.</p>
                 </div>
-                
+
                 <p>This persistence suggests that the root causes of failure are not primarily technological but are instead deeply embedded in the human-centric processes of planning, communication, stakeholder management, and leadership. A landmark study by McKinsey & Company, conducted in collaboration with the University of Oxford, revealed the alarming statistic that 17% of large IT projects go so badly that they "threaten the very existence of the company".<sup><a href="https://www.mckinsey.com/~/media/McKinsey/dotcom/client_service/Corporate%20Finance/MoF/PDF%20issues/PDFs%20Issue%2045/Final/MoF45_LargeScaleIT.ashx" target="_blank">[4, 5, 6]</a></sup></p>
                 <p>This report argues that the extensive data from the Standish Group, synthesized with research from PMI and McKinsey, points to a singular conclusion: the project manager, or the project leadership function, is the central fulcrum upon which project outcomes pivot. The persistent challenge is not a crisis of technology but a crisis of leadership.</p>
-                
+
                 <div class="grid md:grid-cols-3 gap-6 my-12">
                     <div class="stat-card p-6 bg-white shadow-md">
                         <div class="text-5xl font-bold text-black mb-2">$81B</div>
@@ -298,7 +298,7 @@
             <section id="chaos-report" class="py-16">
                 <h2 class="section-heading text-3xl md:text-4xl">Deconstructing the CHAOS Report</h2>
                 <p>The inaugural 1994 CHAOS Report sent shockwaves through the IT industry, quantifying the scale of the software crisis: a mere 16.2% of projects were successful, 52.7% were "challenged," and a staggering 31.1% failed outright.<sup><a href="https://www.csus.edu/indiv/v/velianitis/161/chaosreport.pdf" target="_blank">[2, 7, 10]</a></sup> Over the decades, these figures have shown some improvement but have plateaued. The 2020 CHAOS Report found that 31% of projects were successful, 50% were challenged, and 19% failed.<sup><a href="https://thestory.is/en/journal/chaos-report/" target="_blank">[9, 11]</a></sup> While outright failure has decreased, the fact that two-thirds of projects still end in partial or total failure highlights the enduring nature of this challenge.<sup><a href="https://faethcoaching.com/it-project-failure-rates-facts-and-reasons/" target="_blank">[12]</a></sup></p>
-                
+
                 <div class="bg-white p-6 sm:p-8 rounded-xl my-8 border border-gray-200 shadow-md">
                     <h3 class="text-xl font-semibold mb-4 text-center">CHAOS Report: Project Outcome Trends (1994-2020)</h3>
                     <div class="h-96">
@@ -381,7 +381,7 @@
 
                 <h3 class="text-2xl font-bold mt-12 mb-4">The Evolution of Success Factors</h3>
                 <p>Perhaps the most insightful aspect of the CHAOS Report is the evolution of its identified success factors. In 1994, the top factors were foundational: User Involvement, Executive Management Support, and a Clear Statement of Requirements.<sup><a href="https://www.csus.edu/indiv/v/velianitis/161/chaosreport.pdf" target="_blank">[2, 10]</a></sup> By 2020, this evolved into a new paradigm centered on three core environmental elements: The Good Sponsor, The Good Team, and The Good Place (a supportive organization).<sup><a href="https://hennyportman.files.wordpress.com/2021/01/project-success-qrc-standish-group-chaos-report-2020.pdf" target="_blank">[16, 17]</a></sup> This shift implies the project leader's role has transformed from a process administrator to an ecosystem cultivator.</p>
-                
+
                 <div class="grid md:grid-cols-2 gap-8 my-12">
                     <div class="p-6 bg-white shadow-md">
                         <h4 class="text-xl font-bold mb-4">1994 Success Factors</h4>
@@ -409,7 +409,7 @@
             <section id="yearly-analysis" class="py-16">
                 <h2 class="section-heading text-3xl md:text-4xl">Year-by-Year CHAOS Report Analysis</h2>
                 <p>The CHAOS Report has evolved significantly since its inception, reflecting changes in technology, methodology, and business practices. Below is a detailed analysis of key years and their contributions to our understanding of project success and failure.</p>
-                
+
                 <div class="timeline my-12">
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
@@ -418,7 +418,7 @@
                         <p>The first CHAOS Report established a baseline for the industry, revealing that only 16.2% of projects succeeded. This groundbreaking report coined the terms "successful," "challenged," and "failed" that would become industry standards for discussing project outcomes.</p>
                         <p class="mt-2 text-sm text-gray-600">Key Insight: The report identified that technical issues were rarely the primary cause of failure, pointing instead to managerial and communication problems.</p>
                     </div>
-                    
+
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="year-badge">2000</div>
@@ -426,7 +426,7 @@
                         <p>During the dot-com boom, project failure rates increased slightly as companies rushed digital products to market without proper planning or validation. The report highlighted how market pressure was contributing to poor project outcomes.</p>
                         <p class="mt-2 text-sm text-gray-600">Key Insight: The "time-to-market" pressure was causing organizations to skip crucial planning phases, leading to higher failure rates despite technical advancements.</p>
                     </div>
-                    
+
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="year-badge">2004</div>
@@ -434,7 +434,7 @@
                         <p>This period saw the early impact of Agile methodologies on project success rates. Projects using iterative approaches showed significantly better outcomes than traditional waterfall projects.</p>
                         <p class="mt-2 text-sm text-gray-600">Key Insight: The report began tracking methodology impacts, finding that Agile projects were three times more likely to succeed than waterfall projects.</p>
                     </div>
-                    
+
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="year-badge">2012</div>
@@ -442,7 +442,7 @@
                         <p>With the rise of smartphones and tablets, project complexity increased dramatically. The report noted that successful projects were those that embraced adaptive planning and continuous delivery.</p>
                         <p class="mt-2 text-sm text-gray-600">Key Insight: Smaller projects with iterative delivery were significantly more successful than large, monolithic projects, leading to the "divide and conquer" approach.</p>
                     </div>
-                    
+
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="year-badge">2020</div>
@@ -451,7 +451,7 @@
                         <p class="mt-2 text-sm text-gray-600">Key Insight: Organizations with established digital practices and strong remote collaboration capabilities weathered the transition better than those without.</p>
                     </div>
                 </div>
-                
+
                 <div class="bg-white p-6 my-8 border border-gray-200 shadow-md">
                     <h3 class="text-xl font-semibold mb-4">CHAOS Report Impact Over Time</h3>
                     <p>The CHAOS Report has significantly influenced how organizations approach software project management. Its findings have driven the adoption of:</p>
@@ -467,7 +467,7 @@
             <section id="paradox" class="py-16">
                 <h2 class="section-heading text-3xl md:text-4xl">The Project Manager Paradox</h2>
                 <p>The Standish Group presented a provocative finding: in non-Agile projects, the success rate for those led by highly skilled managers was only 23%, while projects with no manager reportedly achieved a 58% success rate.<sup><a href="https://thestory.is/en/journal/chaos-report/" target="_blank">[9]</a></sup> Their rationale is that project managers often become a source of bureaucratic friction. This stance starkly contrasts with research from the Project Management Institute (PMI), which identifies skilled leadership as critical. PMI's 2020 Pulse of the Profession report found that organizations undervaluing project management see 67% more of their projects failing outright.<sup><a href="https://www.pmi.org/learning/library/forging-future-focused-culture-11908" target="_blank">[19]</a></sup></p>
-                
+
                 <div class="grid md:grid-cols-2 gap-8 my-12">
                     <div class="p-6 bg-white shadow-md">
                         <h4 class="text-xl font-bold mb-4">The Project Administrator (Ineffective)</h4>
@@ -490,25 +490,25 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <p>The apparent paradox is reconciled by understanding two archetypes: the <em>Project Administrator</em> (the bureaucratic functionary criticized by Standish) vs. the <em>Project Leader</em> (the strategic partner championed by PMI). The debate is not about the presence of a title, but the nature of the leadership function. The data collectively argues for eliminating bureaucratic administration and elevating strategic leadership.</p>
-                
+
                 <blockquote>
                     "The best project leaders don't manage processes—they cultivate environments where success is inevitable."
                     <footer>— Jim Johnson, Chairman of The Standish Group</footer>
                 </blockquote>
             </section>
-            
+
             <!-- Remaining sections would continue here with similar styling -->
-            
+
         </div>
     </main>
-    
+
     <footer class="footer mt-16 py-12">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">The Decisive Factor</h3>
+                    <h3 class="text-xl font-bold mb-4">Summary - Chaos Report</h3>
                     <p class="text-gray-400">A comprehensive analysis of project management's impact on software success based on decades of CHAOS Report data.</p>
                 </div>
                 <div>
@@ -542,7 +542,7 @@
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-            
+
             // Back to top button
             const backToTopButton = document.querySelector('.back-to-top');
             window.addEventListener('scroll', () => {
@@ -552,11 +552,11 @@
                     backToTopButton.classList.remove('visible');
                 }
             });
-            
+
             backToTopButton.addEventListener('click', () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
-            
+
             // Chart.js implementation
             const ctx = document.getElementById('chaosChart').getContext('2d');
             new Chart(ctx, {
@@ -564,21 +564,21 @@
                 data: {
                     labels: ['1994', '2000', '2004', '2006', '2009', '2012', '2015', '2020'],
                     datasets: [
-                        { 
-                            label: '% Successful', 
-                            data: [16.2, 28, 29, 35, 32, 37, 29, 31], 
+                        {
+                            label: '% Successful',
+                            data: [16.2, 28, 29, 35, 32, 37, 29, 31],
                             backgroundColor: '#22c55e',
                             borderRadius: 4
                         },
-                        { 
-                            label: '% Challenged', 
-                            data: [52.7, 49, 53, 46, 44, 42, 52, 50], 
+                        {
+                            label: '% Challenged',
+                            data: [52.7, 49, 53, 46, 44, 42, 52, 50],
                             backgroundColor: '#f59e0b',
                             borderRadius: 4
                         },
-                        { 
-                            label: '% Failed', 
-                            data: [31.1, 23, 18, 19, 24, 21, 19, 19], 
+                        {
+                            label: '% Failed',
+                            data: [31.1, 23, 18, 19, 24, 21, 19, 19],
                             backgroundColor: '#ef4444',
                             borderRadius: 4
                         }
@@ -645,20 +645,20 @@
                     }
                 }
             });
-            
+
             // Smooth scrolling for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
                     if (targetId === '#') return;
-                    
+
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
                         const headerOffset = 100;
                         const elementPosition = targetElement.getBoundingClientRect().top;
                         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                        
+
                         window.scrollTo({
                             top: offsetPosition,
                             behavior: 'smooth'
